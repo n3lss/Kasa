@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../assets/sass/Carousel.scss';
+import Vector from "./Vector";
 
 function Carousel(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,11 +19,11 @@ function Carousel(props) {
   return (
     <div className="carousel" >
       <button className="arrow left" onClick={goToPrevSlide}>
-        &lt; 
+        <Vector/> 
       </button>
       <img src={images[currentIndex]} alt={`numero ${currentIndex + 1} des cover`} />
       <button className="arrow right" onClick={goToNextSlide}>
-        &gt; 
+        <Vector direction='right'/> 
       </button>
       <div className="position-indicator">{`${currentIndex + 1}/${images.length}`}</div>
     </div>
