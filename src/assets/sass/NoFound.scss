@@ -1,0 +1,14 @@
+.noFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 700px;
+    h1 {
+        margin: none;
+        font-size: 150px;
+    }
+    h2 {
+        margin-bottom: 80px;
+    }
+}

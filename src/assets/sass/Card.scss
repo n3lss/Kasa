@@ -1,0 +1,59 @@
+.card {
+    margin: auto;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+.carousel {
+    margin-top: 20px;
+}
+.divColapse div{
+    width: 100%;
+
+}
+.divColapse {
+    display: flex;
+    gap: 30px;
+
+}
+.appartementInfo {
+    @media  (max-width:768px) {
+        flex-wrap: wrap;
+    }
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.appartementloc {
+    display: flex;
+    
+}
+
+.hostInfo div{
+    display: flex;
+    align-items: center;
+    
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+.hostName{
+    
+    gap: 20px;
+    h2{
+        font-size: 18px;
+    }
+}
+.tag {
+    display: flex;
+    gap: 10px;
+    p{
+        color: white;
+        background-color: #FF6060;
+        border-radius: 10px;
+        padding: 2px 20px 2px 20px;
+    }
+}

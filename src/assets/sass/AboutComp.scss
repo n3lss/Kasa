@@ -1,0 +1,48 @@
+.AboutCompDivH2 .title{
+  padding: 10px 20px 10px 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  height: 60px;
+  box-sizing: border-box;
+  background-color: #FF6060;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutCompDivP {
+  
+  background-color: #F6F6F6;
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  transition: max-height 1.5s ease;
+  &.active {
+    border-radius: 0px 0px 10px 10px;
+    max-height: 240px;
+    transition: max-height 1.5s ease; 
+  }
+  p{
+    font-size: 19px;
+    margin: 20px;
+  }
+}
+.active{
+  display: block;
+}
+.arrow-icon {
+  vertical-align: middle;
+  margin-left: 5px; 
+  
+  &.up {
+    transition: transform 1s ease;
+    transform: rotate(180deg); 
+  }
+
+  &.down {
+    transition: transform 1.5s ease;
+    transform: rotate(0deg); 
+  }
+}
+  
