@@ -9,6 +9,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  h2{
+    font-size: 24px;
+  }
 }
 
 .aboutCompDivP {
@@ -22,6 +25,13 @@
     border-radius: 0px 0px 10px 10px;
     max-height: 240px;
     transition: max-height 1.5s ease; 
+  }
+  ul {
+    padding-inline-start: 15px;
+    li{
+      list-style-type: none;
+      margin-top: 10px;
+    }
   }
   p{
     font-size: 19px;
@@ -45,4 +55,5 @@
     transform: rotate(0deg); 
   }
 }
+
   

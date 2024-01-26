@@ -14,12 +14,8 @@
 .divColapse {
     display: flex;
     gap: 30px;
-
 }
 .appartementInfo {
-    @media  (max-width:768px) {
-        flex-wrap: wrap;
-    }
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -50,10 +46,29 @@
 .tag {
     display: flex;
     gap: 10px;
-    p{
+    span{
         color: white;
         background-color: #FF6060;
         border-radius: 10px;
         padding: 2px 20px 2px 20px;
+    }
+}
+
+@media  (max-width:768px) {
+    h1{
+        font-size: 40px;
+    }
+    .hostInfo{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .appartementInfo{
+        flex-wrap: wrap;
+    }
+    .divColapse{
+        display: initial;
     }
 }

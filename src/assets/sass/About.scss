@@ -5,8 +5,8 @@
     margin: auto;
     width: 90%;
 }
-.App .AboutCompDivH2 {
-    @media (min-width: 768px) {
+@media (min-width: 768px) {
+    .App .AboutCompDivH2 {
         width: 75%;
     }
-  }
+}
