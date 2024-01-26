@@ -11,9 +11,9 @@ function AboutComp(props) {
   const isArray = Array.isArray(props.text);
   const isString = typeof props.text === 'string';
   return (
-    <div className='AboutCompDivH2' >
+    <div className='AboutCompDivH2'onClick={activeClass} >
       <div className='title'>
-      <h2 onClick={activeClass}>{props.title}</h2>
+      <h2 >{props.title}</h2>
       <img alt='fleche' src={arrow} className={`arrow-icon ${isActive ? 'up' : 'down'}`} onClick={activeClass}/>
       </div>
       <div className={`aboutCompDivP ${isActive ? 'active' : ''}`}>

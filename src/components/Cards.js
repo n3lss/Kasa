@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import users from '../apartement.json'
 import '../assets/sass/Cards.scss'
-function Cart(props) {
+function Cart() {
     return (
         <div className="cart">
             
