@@ -17,21 +17,24 @@ function Card() {
     const rating = ratingstar;
     for (let i = 1; i <= 5; i++) {
     if (i <= rating) {
-      starsHTML.push(<Star color={true}/>);
+      starsHTML.push(<Star color={true} key={i}/>);
     } else {
-      starsHTML.push(<Star color={false}/>);
+      starsHTML.push(<Star color={false} key={i}/>);
     }
  }
  return <div>{starsHTML}</div>;
   } 
-  function tagsgGenerate(tags){
+ /*  function tagsgGenerate(tags){
+    tags.map(tag => {
+      return <span className="badge rounded-pill bg-primary">{tag}</span>
+    })
     let tagList=[]
     const tagLength = tags.length
     for (let i = 0; i < tagLength; i++){
-      tagList.push(<p>{tags[i]}</p>)
+      tagList.push(<p key={tagLength}>{tags[i]}</p>)
     }
-    return tagList
-   }
+    return tagList 
+   } */
   return (
     <div className='card'>
 
@@ -47,7 +50,9 @@ function Card() {
               {appartement.location}
             </h2>
             <div className="tag">
-              {tagsgGenerate(appartement.tags)}
+              {appartement.tags.map(tag => {
+                return <span className="badge rounded-pill bg-primary" key={tag}>{tag}</span>
+              })}
             </div>
           </div>
 
