@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import '../assets/sass/AboutComp.scss';
+import { useState } from 'react';
+import '../assets/sass/Colaps.scss';
 import arrow from '../assets/images/arrow_back_ios-24px 2.svg'
 
-function AboutComp(props) {
+function Colaps(props) {
   const [isActive, setIsActive] = useState(false);
 
   const activeClass = () => {
@@ -30,4 +30,4 @@ function AboutComp(props) {
   );
 }
 
-export default AboutComp;
+export default Colaps;

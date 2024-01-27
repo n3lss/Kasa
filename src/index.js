@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-import App from './pages/App';
+import About from './pages/About.js';
 import Nav from './components/nav';
 import Footer from './components/footer';
 import Accueil from './pages/Accueil';
 import NotFound from './pages/NotFound';
-import './assets/sass/style.scss';
-import Appartement from './pages/appartement';
+import './assets/sass/Style.scss';
+import Appartement from './pages/Appartement';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -16,7 +16,7 @@ root.render(
     <Nav/>
       <Routes>
           <Route path='/' element={<Accueil />}/>
-          <Route path='/app' element={<App />}/>
+          <Route path='/About' element={<About />}/>
           <Route path='*' element={<NotFound />}/>
           <Route path="/Appartement/:id" element={<Appartement/>}/>
       </Routes>

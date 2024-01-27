@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import LogoKasa from './logo';
-import '../assets/sass/nav.scss';
+import '../assets/sass/Nav.scss';
 function Nav() {
     return (
         <div className='header'>
@@ -10,7 +10,7 @@ function Nav() {
                 </div>
                 <nav className="navBar">
                     <NavLink to="/" >Accueil</NavLink>
-                    <NavLink to="/app">A Propos</NavLink>
+                    <NavLink to="/About">A Propos</NavLink>
                 </nav>
             </header>
         </div>

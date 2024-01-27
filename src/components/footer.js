@@ -1,4 +1,4 @@
-import '../assets/sass/footer.scss'
+import '../assets/sass/Footer.scss'
 import LogoKasa from './logo';
 
 function Footer() {

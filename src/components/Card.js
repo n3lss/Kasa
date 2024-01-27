@@ -1,6 +1,5 @@
-import React from "react";
 import { Navigate, useParams } from "react-router-dom";
-import AboutComp from "./AboutComponent";
+import Colaps from "./Colaps";
 import json from '../apartement.json'
 import Carousel from "./Carousel";
 import Star from "./Star";
@@ -68,8 +67,8 @@ function Card() {
         </div>
 
         <div className="divColapse">
-          <AboutComp title="Description" text={appartement.description}/>
-          <AboutComp title="Équipement" text={appartement.equipments}/>
+          <Colaps title="Description" text={appartement.description}/>
+          <Colaps title="Équipement" text={appartement.equipments}/>
         </div>
 
       </div>
