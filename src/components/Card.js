@@ -62,7 +62,9 @@ function Card() {
               </h2>
               <img src={appartement.host.picture} alt={`${appartement.host.name}`}/>
             </div>
+            <div className="rating">
               {starGenerator(appartement.rating)}
+            </div>
           </div>
         </div>
 
