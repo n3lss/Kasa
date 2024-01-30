@@ -23,3 +23,14 @@
       }
     }
   }
+  @media (max-width: 768px) {
+    .navBar {
+      a{
+        font-size: 12px;
+      }
+    }
+    svg{
+      width: 110px;
+      height: 46px;
+    }
+  }

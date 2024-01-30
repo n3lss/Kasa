@@ -23,17 +23,7 @@ function Card() {
  }
  return <div>{starsHTML}</div>;
   } 
- /*  function tagsgGenerate(tags){
-    tags.map(tag => {
-      return <span className="badge rounded-pill bg-primary">{tag}</span>
-    })
-    let tagList=[]
-    const tagLength = tags.length
-    for (let i = 0; i < tagLength; i++){
-      tagList.push(<p key={tagLength}>{tags[i]}</p>)
-    }
-    return tagList 
-   } */
+
   return (
     <div className='card'>
 
