@@ -41,4 +41,13 @@
   color: #ffffff;
 }
   
-  
+@media  (max-width:768px) {
+  .position-indicator {
+    display: none;
+  }
+  .arrow {
+    svg {
+      width: 48px;
+    }
+  }
+}

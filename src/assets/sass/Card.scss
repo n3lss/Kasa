@@ -59,7 +59,10 @@ h2{
 
 @media  (max-width:768px) {
     h1{
-        font-size: 40px;
+        font-size: 20px;
+    }
+    h2{
+        font-size: 14px;
     }
     .hostInfo{
         width: 100%;
@@ -67,11 +70,33 @@ h2{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        .hostName {
+            gap: 5px;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+            h2 {
+                width: 80px;
+            }
+        }
     }
     .appartementInfo{
         flex-wrap: wrap;
     }
     .divColapse{
         display: initial;
+    }
+    .tag span{
+        padding: 2px 4px 2px 4px;
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+    }
+    .rating {
+        svg{
+            height: 18px ;   
+            width: 18px;    
+        }
     }
 }
