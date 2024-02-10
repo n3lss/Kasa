@@ -14,7 +14,7 @@ function Colaps(props) {
     <div className='AboutCompDivH2'onClick={activeClass} >
       <div className='title'>
       <h2 >{props.title}</h2>
-      <img alt='fleche' src={arrow} className={`arrow-icon ${isActive ? 'up' : 'down'}`} onClick={activeClass}/>
+      <img alt='fleche' src={arrow} className={`arrow-icon ${isActive ? 'up' : 'down'}`}/>
       </div>
       <div className={`aboutCompDivP ${isActive ? 'active' : ''}`}>
       {isArray && (

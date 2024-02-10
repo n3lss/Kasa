@@ -11,26 +11,24 @@ function Card() {
     return <Navigate to="/404"
     />;
   }
-   function starGenerator (ratingstar) {
+  function starGenerator (ratingstar) {
     let starsHTML = [];
     const rating = ratingstar;
     for (let i = 1; i <= 5; i++) {
-    if (i <= rating) {
-      starsHTML.push(<Star color={true} key={i}/>);
-    } else {
-      starsHTML.push(<Star color={false} key={i}/>);
+      if (i <= rating) {
+        starsHTML.push(<Star color={true} key={i}/>);
+      } else {
+        starsHTML.push(<Star color={false} key={i}/>);
+      }
     }
- }
- return <div>{starsHTML}</div>;
+    return <div>{starsHTML}</div>;
   } 
 
   return (
     <div className='card'>
-
       <div>
         <Carousel src={appartement.pictures}/>
         <div className="appartementInfo">
-          
           <div className="appartementLoc">
             <h1 className='title'>
               {appartement.title}
@@ -44,7 +42,6 @@ function Card() {
               })}
             </div>
           </div>
-
           <div className="hostInfo">
             <div className="hostName">
               <h2>
@@ -57,14 +54,11 @@ function Card() {
             </div>
           </div>
         </div>
-
         <div className="divColapse">
           <Colaps title="Description" text={appartement.description}/>
           <Colaps title="Équipement" text={appartement.equipments}/>
         </div>
-
       </div>
-
     </div>
   );
 };
